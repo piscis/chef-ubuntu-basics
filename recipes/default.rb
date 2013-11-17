@@ -5,6 +5,18 @@ package "debian-archive-keyring" do
   options "--force-yes"
 end
 
+package "vim-nox" do
+    action :install
+end  
+
+package "wget" do
+    action :install
+end
+
+package "curl" do
+    action :install
+end
+
 package "mailutils" do
     action :install
 end
