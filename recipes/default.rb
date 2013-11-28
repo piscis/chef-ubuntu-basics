@@ -1,3 +1,4 @@
+include_recipe "apt"
 include_recipe "fail2ban::default"
 
 package "debian-archive-keyring" do
