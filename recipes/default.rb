@@ -10,6 +10,18 @@ package "vim-nox" do
     action :install
 end  
 
+package "update-manager-core" do
+    action :install
+end  
+
+package "aptitude" do
+    action :install
+end  
+
+package "screen" do
+    action :install
+end
+
 package "wget" do
     action :install
 end
