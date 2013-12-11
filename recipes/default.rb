@@ -1,6 +1,11 @@
 include_recipe "apt"
 include_recipe "fail2ban::default"
 
+package "apt-transport-https" do
+  action :install
+  options "--force-yes"
+end
+
 package "debian-archive-keyring" do
   action :install
   options "--force-yes"
