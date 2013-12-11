@@ -3,7 +3,14 @@ include_recipe "fail2ban::default"
 
 package "apt-transport-https" do
   action :install
-  options "--force-yes"
+end
+
+package "screen" do
+  action :install
+end
+
+package "mlocate" do
+  action :install
 end
 
 package "debian-archive-keyring" do
